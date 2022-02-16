@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Poppins',
+    sans-serif;
+}
+.bank-heading{
+    color: #791949;
+    font-size: 48px;
+}
+.img{
+    width: 705px;
+    height: 815px;
+}
+.calculation{
+    background: #f8f8f8;
+    
+    
+}
+.input-filed{
+    border: none;
+    width: 229px;
+    height: 44px;
+    background: #DCDCDC;
+    border-radius: 2px;
+}
+.input-text{
+    font-size: 20px;
+}
+.common-heading{
+    font-weight: 500;
+}
