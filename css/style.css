@@ -12,7 +12,7 @@ body{
     width: 705px;
     height: 815px;
 }
-.calculation{
+.calculation-body {
     background: #f8f8f8;
     
     
@@ -24,9 +24,22 @@ body{
     background: #DCDCDC;
     border-radius: 2px;
 }
+.save-filed{
+    border: none;
+    width: 100px;
+    height: 44px;
+    background: #DCDCDC;
+    border-radius: 2px;
+}
 .input-text{
     font-size: 20px;
 }
 .common-heading{
+    font-weight: 500;
+}
+.button{
+    border: none;
+    background-color: #791949;
+    color: white;
     font-weight: 500;
 }
