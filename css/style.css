@@ -33,6 +33,8 @@ body{
 }
 .input-text{
     font-size: 20px;
+    color: #791949;
+    font-weight: 500;
 }
 .common-heading{
     font-weight: 500;

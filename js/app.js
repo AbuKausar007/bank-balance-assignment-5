@@ -2,7 +2,6 @@ function inputField(fieldId){
     const fieldBox = document.getElementById(fieldId);
     const inputAmount = parseFloat(fieldBox.value);
     fieldBox.value = '';
-    console.log(inputAmount);
     return inputAmount;
     
 }
@@ -10,25 +9,13 @@ function inputField(fieldId){
 
 // event handler for calculate button
 document.getElementById('calc-btn').addEventListener('click', function(){
-     //const incomeField = document.getElementById('income-box');
-    // const incomeAmount = parseFloat(incomeField.value);
-    // incomeField.value = '';
+     
     const incomeAmount = inputField('income-box');
 
-    // const foodField = document.getElementById('food-box');
-    // const foodAmount = parseFloat(foodField.value);
-    // foodField.value = '';
     const foodAmount = inputField('food-box');
 
-    // const rentField = document.getElementById('rent-box');
-    // const rentAmount = parseFloat(rentField.value);
-    // rentField.value = '';
     const rentAmount = inputField('rent-box');
 
-
-    // const clothField = document.getElementById('cloth-box');
-    // const clothAmount = parseFloat(clothField.value);
-    // clothField.value = '';
     const clothAmount = inputField('cloth-box');
 
     const totalExpensesField = document.getElementById('total-expenses');
@@ -45,7 +32,7 @@ document.getElementById('calc-btn').addEventListener('click', function(){
     document.getElementById('save-btn').addEventListener('click',function(){
     const percentField = document.getElementById('save-box');
     const percentToGet = parseFloat(percentField.value);
-    const savingAmount = (percentToGet/100) * totalBalanceAfterExpense;
+    const savingAmount = (percentToGet/100) * incomeAmount;
     console.log(savingAmount);
 
     const savingField = document.getElementById('saving-amount');
