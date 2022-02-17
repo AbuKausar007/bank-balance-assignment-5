@@ -1,6 +1,9 @@
 function inputField(fieldId){
     const fieldBox = document.getElementById(fieldId);
     const inputAmount = parseFloat(fieldBox.value);
+    if(fieldBox.value.length <= 0){
+        alert('Input valid number please.');
+    }
     fieldBox.value = '';
     return inputAmount;
     
