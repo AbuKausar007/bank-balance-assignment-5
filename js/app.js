@@ -2,7 +2,7 @@
 function inputField(fieldId){
     const fieldBox = document.getElementById(fieldId);
     const inputAmount = parseFloat(fieldBox.value);
-    if(fieldBox.value.length <= 0){
+    if(isNaN(inputAmount) || inputAmount <= 0 ){
         alert('Input valid number please.');
     }
     fieldBox.value = '';
@@ -22,7 +22,6 @@ document.getElementById('calc-btn').addEventListener('click', function(){
     // calculating tota expense
     const totalExpensesField = document.getElementById('total-expenses');
     const totalExpensesAmount = parseFloat(totalExpensesField.innerText);
-    console.log(totalExpensesAmount);
     const totalExpensesIs = foodAmount + rentAmount + clothAmount;
     totalExpensesField.innerText = totalExpensesIs;
 
@@ -37,7 +36,6 @@ document.getElementById('calc-btn').addEventListener('click', function(){
     const percentField = document.getElementById('save-box');
     const percentToGet = parseFloat(percentField.value);
     const savingAmount = (percentToGet/100) * incomeAmount;
-    console.log(savingAmount);
 
     // get and update saving money
     const savingField = document.getElementById('saving-amount');
