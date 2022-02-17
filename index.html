@@ -14,20 +14,23 @@
     <title>Bank Balance</title>
 </head>
 <body>
+    <!-- heading start -->
    <header>
        <h1 class="text-center fw-bold mt-5 bank-heading">Bank Balance <i class="fa-solid fa-circle-dollar-to-slot"></i></h1>
    </header>
+   <!-- main section start -->
    <main class="container">
        <section class="row pt-4">
+           <!-- image part start -->
            <div class="col-lg-7 ">
                <img class="img-fluid img" src="images/atm.jpg" alt="">
            </div>
-           
+           <!-- income field start -->
            <div class="col-lg-5 calculation-body text-center">
             <h3 class="pt-4 common-heading">Income</h3>
 
             <label class="input-text pt-3" for="income-box">Income :  </label><input id="income-box" class="input-field ms-3 px-4" type="text" placeholder="Your income">
-
+            <!-- expense field start -->
             <h3 class="pt-4 common-heading">Expenses</h3>
 
             <label class="input-text pt-3" for="food-box">Food :  </label><input id="food-box" class="input-field ms-3 px-4" type="text" placeholder="Food cost"> <br>
@@ -35,30 +38,30 @@
             <label class="input-text pt-4" for="rent-box">Rent :  </label><input id="rent-box" class="input-field ms-3 px-4" type="text" placeholder="Rent cost"> <br>
 
             <label class="input-text pt-4" for="cloth-box">Clothes :  </label><input id="cloth-box" class="input-field ms-3 px-4" type="text" placeholder="Clothe cost">
-
+            <!-- calculate button start -->
             <div>
                 <button id="calc-btn" class="mt-5 py-2 px-4 rounded fs-5  button">Calculate</button>
             </div>
-
+            <!-- expense and balance showing -->
             <h3 class="common-heading pt-4 ">Total Expenses : <span id="total-expenses">00</span></h3>
             <h3 class="common-heading pt-2 ">Balance : <span id="balance">00</span></h3>
-
+            <!-- save percentage start -->
             <div class="d-flex justify-content-evenly align-items-center pt-4">
                 <div>
                     <label class="input-text" for="save-box">Save :  </label><input id="save-box" class="save-filed ms-3 px-4" type="text" placeholder="Save"> <span class="fs-5">%</span>
                 </div> <button class="button py-2 px-4 rounded fs-5" id="save-btn">Save</button>
             </div>
+            <!-- remaing and saving balance -->
             <div class="pt-4">
                 <h3 class=" common-heading">Saving Amount : <span id="saving-amount">00</span></h3>
                 <h3 class="pt-2 common-heading">Remaing Balance : <span id="remainging-balance">00</span></h3>
             </div>
-            
-            
            </div>
        </section>
    </main>
+    <!-- main part end -->
     
-
+    <!-- js file add -->
     <script src="js/app.js"></script>
 </body>
 </html>
