@@ -1,5 +1,7 @@
+/* ----------------------------google font link-------------------------------  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+/* ----------------------------common style----------------------------------- */
 body{
     font-family: 'Poppins',
     sans-serif;
@@ -8,21 +10,33 @@ body{
     color: #791949;
     font-size: 48px;
 }
-.img{
+.common-heading {
+    font-weight: 500;
+}
+.img {
     width: 705px;
     height: 815px;
 }
 .calculation-body {
     background: #f8f8f8;
-    
-    
 }
-.input-filed{
+.input-text {
+    font-size: 20px;
+    color: #791949;
+    font-weight: 500;
+}
+.input-field{
     border: none;
     width: 229px;
     height: 44px;
     background: #DCDCDC;
     border-radius: 2px;
+}
+.button {
+    border: none;
+    background-color: #791949;
+    color: white;
+    font-weight: 500;
 }
 .save-filed{
     border: none;
@@ -31,25 +45,14 @@ body{
     background: #DCDCDC;
     border-radius: 2px;
 }
-.input-text{
-    font-size: 20px;
-    color: #791949;
-    font-weight: 500;
-}
-.common-heading{
-    font-weight: 500;
-}
-.button{
-    border: none;
-    background-color: #791949;
-    color: white;
-    font-weight: 500;
-}
 
 /* --------------------responsive for mobile--------------------- */
 @media only screen and (min-width: 0px) and (max-width:576px){
     .img {
         width: auto;
         height: 600px;
+    }
+    .bank-heading{
+        font-size: 42px;
     }
 }
